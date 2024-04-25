@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap");
+
+body {
+  background-color: var(--primary-color);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: white;
+}
+a {
+  text-decoration: none;
+}
+body{
+    background-color: black;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+.cont {
+  font-size: 1.2rem;
+  font-family: "Merriweather Sans", sans-serif;
+  height: 80px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  color: white;
+  background-color: rgb(17, 16, 16);
+  box-shadow: 0px 25px 20px -20px rgba(0,0,0,0.45);
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.cont .navbar {
+  justify-content: space-between;
+}
+
+.navbar ul li {
+  list-style-type: none;
+}
+
+.cont .navbar ul li {
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.navbar a {
+  font-weight: bold;
+  color: white;
+}
+
+.navbar a:hover {
+    color:blue
+}
+.h{
+    width: 50px;
+    height:50px;
+    margin-left: 40px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 250px;
+}
+.name{
+    color:white;
+    line-height: 1.4;
+    margin-top: 150px;
+}
+.name p{
+    width: 45%;
+    font-size: 20px;
+    color: aqua;
+}
+.name h1{
+    font-size:70px
+}
+.name button{
+    margin-top: 30px;
+    padding: 15px;
+    width: 250px;
+    background-color: black;
+    color: white;
+    border: 1px solid aqua;
+    font-weight: 400;
+}
+.name h1:nth-child(3){
+  color: rgb(137, 149, 149);
+}
+.info{
+  width: 50%;
+}
+.info h3{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.info p{
+  font-size: 1.1rem;
+  line-height: 1.3;
+  margin-top: 15px;
+}
+.two{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 250px;
+  margin-bottom: 100px;
+}
+/* styles.css */
+.i {
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+  border-radius: 20px;
+  transition: transform 0.5s;
+}
+
+.parent {
+  position: relative; /* Use relative positioning */
+  width: 400px;
+  height: 400px;
+  overflow: hidden; /* Ensure overflow hidden to hide border overflow */
+}
+
+.border {
+  border: 3px solid aqua;
+  width: 300px;/* Use 100% width to cover parent */
+  height: 300px; /* Use 100% height to cover parent */
+  position: absolute;
+  z-index: -1;
+  top:65px;
+  left:70px;
+  transition: transform 0.5s;
+  background-color: black;
+}
+
+.parent:hover .i {
+  transform: translateY(-10px);
+}
+
+.parent:hover .border {
+  transform: translateY(10px);
+}
+.pro{
+  width: 100%;
+  display: flex;
+  margin-top: 150px;
+}
+.proinfo{
+  width: 40%;
+  padding: 30px;
+  margin-top: 30px;
+  z-index: 1;
+  position: relative;
+  right:90px;
+}
+.probox{
+  background-color: rgb(159, 167, 167);
+  padding: 10px;
+  margin-top: 20px;
+}
+.probox p{
+  line-height: 1.0;
+  color: black;
+  text-align: right;
+  padding: 5px;
+}
+.proinfo h3,h4{
+  text-align: right;
+  margin: 5px;
+}
+.img img{
+  width: 600px;
+  height: 300px;
+  margin-top: 50px;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 250px;
+}
+
+.form-title {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+}
+
+textarea {
+  height: 120px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.img img:hover{
+  transform:translateY(-10px);
+}

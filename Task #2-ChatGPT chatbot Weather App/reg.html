@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reg form</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <table>
+    <tr><td>Name:</td><td><input type="text" name="sname" id="sname"></td></tr>
+    <tr><td>Roll No:</td><td><input type="text" name="roll" id="roll"></td></tr>
+    <tr><td>Reg No:</td><td><input type="text" name="reg" id="reg"></td></tr>
+    <tr><td>Branch:</td><td>
+        <select name="br" id="br">
+            <option value="CSE">CSE</option>
+            <option value="Mech">Mech</option>
+            <option value="EEE">EEE</option>
+        </select>
+    </td></tr>
+    <tr><td>DOB:</td><td><input type="date" id="da" name="da"></td></tr>
+    <tr><td>Email:</td><td><input type="email" id="em" name="em"></td></tr>
+    <tr><td>Semester:</td><td>
+        <input type="radio" id="s1" value="Sem1">Sem 1
+        <input type="radio" id="s2" value="Sem2">
+        <input type="radio" id="s3" value="Sem3">
+    </td></tr>
+    <tr><td><button onclick="validate()">Submit</button></td></tr>
+    </table>
+    <script>
+        function validate()
+        {
+        var a=document.getElementById("sname").value;
+        var b=document.getElementById("roll").value;
+        var c=document.getElementById("reg").value;
+        var d=document.getElementById("br").value;
+        document.write("Name:"+a);
+        document.write("Roll No:"+b);
+        document.write("Reg No:"+c);
+        document.write("Branch:"+d);
+        }
+    </script>
+</body>
+</html>
